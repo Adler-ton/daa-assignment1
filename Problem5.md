@@ -20,10 +20,9 @@
 1. Chapter 5.5, The Algorithm Design Manual, 3rd Edition, 2020 - Steven H. Skiena
 2. Chapter 1.3, Algorithms Illuminated Part1, 2017 - Tim Roughgarden
 
-### Report - Largest Subrange
-+ Describe here your solutions in human language using Markdown syntax and possibly latex pieces like this one $T(n)=\Theta(n\log{n})$.
-+ Provide bounds ($\Theta$/$O$/$\Omega$ ) for the running times ($T(n)$) for each solution and justify them.
-+ Compare empirically (using `System.nanoTime()`) running times of brute-force and divide-and-conquer solutions and reflect the results in this report.
+### Report
+
+**Approach.** `multBrute` uses decimal digit-by-digit multiplication in Θ(nm) time. `multSmart` uses Karatsuba's three recursive products, giving Θ(n^log₂3) time for similarly sized operands; both work directly on decimal strings without `BigInteger`. The measured comparison and full analysis are in [REPORT.md](REPORT.md).
 
 ### Defense Interview
 + Be ready to justify running times, for example using **Master method** for divide-and-conquer algorithms.

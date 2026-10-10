@@ -20,10 +20,9 @@
 1. Chapter 5.6, The Algorithm Design Manual, 3rd Edition, 2020 - Steven H. Skiena
 2. [maximum-subarray](https://leetcode.com/problems/maximum-subarray/description/)
 
-### Report - Largest Subrange
-+ Describe here your solutions in human language using Markdown syntax and possibly latex pieces like this one $T(n)=\Theta(n\log{n})$.
-+ Provide bounds ($\Theta$/$O$/$\Omega$ ) for the running times ($T(n)$) for each solution and justify them.
-+ Compare empirically (using `System.nanoTime()`) running times of brute-force and divide-and-conquer solutions and reflect the results in this report.
+### Report
+
+**Approach.** `maxSumBrute` enumerates all non-empty subarrays in Θ(n²) time and Θ(1) extra space. `maxSumSmart` compares the best left, right, and crossing subarrays; its recurrence is T(n)=2T(n/2)+Θ(n), so it takes Θ(n log n) time and Θ(log n) recursion space. The measured comparison and full analysis are in [REPORT.md](REPORT.md).
 
 ### Defense Interview
 + Be ready to justify running times, for example using **Master method** for divide-and-conquer algorithms.

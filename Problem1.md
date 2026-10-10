@@ -25,10 +25,9 @@
 1. Chapter 5.1.1 Counting Occurrences, The Algorithm Design Manual, 3rd Edition, 2020 - Steven H. Skiena
 2. [find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
 
-### Report - Number of Occurrences
-+ Describe here your solutions in human language using Markdown syntax and possibly latex pieces like this one $T(n)=\Theta(n\log{n})$.
-+ Provide bounds ($\Theta$/$O$/$\Omega$ ) for the running times ($T(n)$) for each solution and justify them.
-+ Compare empirically (using `System.nanoTime()`) running times of brute-force and divide-and-conquer solutions and reflect the results in this report.
+### Report
+
+**Approach.** `countFreqBrute` scans all values in Θ(n) time and Θ(1) extra space. `countFreqSmart` performs lower-bound and upper-bound binary searches and subtracts their indices, taking Θ(log n) time and Θ(1) extra space. The measured comparison and full analysis are in [REPORT.md](REPORT.md).
 
 ### Defense Interview 
 + Be ready to justify running times, for example using **Master method** for divide-and-conquer algorithms.
